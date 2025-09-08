@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import CreateAccount from './CreateAccount';
+import DepositMoney from './DepositMoney';
+import LoanRequest from './LoanRequest';
 import './App.css';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         </a>
       </header>
       <CreateAccount />
+      <DepositMoney />
+      <LoanRequest />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function DepositMoney() {
   const [result, setResult] = useState(null);
 
   const handleDeposit = async () => {
-    const res = await axios.post('http://localhost:3001/deposit', {
+    const res = await axios.post('https://simple-bank-back.onrender.com/deposit', {
       accountId: Number(accountId),
       amount: Number(amount),
     });

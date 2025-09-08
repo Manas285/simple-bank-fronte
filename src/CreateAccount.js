@@ -6,7 +6,7 @@ function CreateAccount() {
   const [account, setAccount] = useState(null);
 
   const handleCreate = async () => {
-    const res = await axios.post('http://localhost:3001/accounts', { name });
+    const res = await axios.post('https://simple-bank-back.onrender.com/accounts', { name });
     setAccount(res.data.account);
   };
 

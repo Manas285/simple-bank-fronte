@@ -7,7 +7,7 @@ function LoanRequest() {
   const [result, setResult] = useState(null);
 
   const handleLoan = async () => {
-    const res = await axios.post('http://localhost:3001/loan', {
+    const res = await axios.post('https://simple-bank-back.onrender.com/loan', {
       accountId: Number(accountId),
       amount: Number(amount),
     });
